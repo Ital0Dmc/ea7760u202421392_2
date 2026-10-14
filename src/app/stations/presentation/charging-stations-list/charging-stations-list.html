@@ -1,0 +1,14 @@
+<section aria-labelledby="my-charging-stations-title">
+  @if (chargingStations().length > 0) {
+    <mat-grid-list cols="2" rowHeight="230px" gutterSize="16px" role="list">
+      @for (chargingStation of chargingStations(); track chargingStation.id) {
+        <mat-grid-tile role="listitem">
+          <app-charging-stations-summary [chargingStations]="chargingStation" />
+
+        </mat-grid-tile>
+      }
+    </mat-grid-list>
+  } @else {
+    <p>{{ 'home.empty' | translate }}</p>
+  }
+</section>

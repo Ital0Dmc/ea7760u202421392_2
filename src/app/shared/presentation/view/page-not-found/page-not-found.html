@@ -1,0 +1,5 @@
+<section role="alert" aria-labelledby="not-found-title">
+  <h1 id="not-found-title">{{ 'page-not-found.title' | translate }}</h1>
+  <p>{{ 'page-not-found.message' | translate: { path: invalidPath } }}</p>
+  <a mat-flat-button routerLink="/home">{{ 'page-not-found.back-home' | translate }}</a>
+</section>

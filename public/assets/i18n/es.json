@@ -1,0 +1,26 @@
+{
+  "toolbar": {
+    "title": "Distribución inteligente de energía y gestión de supercargadores",
+    "home": "Inicio",
+    "new-energy-report": "Nuevo reporte de vehiculo"
+  },
+  "home": {
+    "title": "Inicio",
+    "features": {
+      "title": "Mis estaciones de carga"
+    },
+    "my-charging-stations": "Mis estaciones de carga",
+    "active": "Activo",
+    "inactive": "Inactivo"
+  },
+  "page-not-found": {
+    "title": "Página no encontrada",
+    "message": "La página que estás buscando no existe.",
+    "back-home": "Volver a la página principal"
+  },
+  "vehicle-form": {
+    "title": "Nuevo reporte de vehiculo",
+    "subtitle": "Registrar demanda de energía del vehículo eléctrico en la estación",
+    "vehicle-type": "Tipo de vehículo"
+  }
+}

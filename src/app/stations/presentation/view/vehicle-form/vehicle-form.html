@@ -1,0 +1,17 @@
+<h1> {{ 'vehicle-form.title' | translate }}</h1>
+<h2> {{ 'vehicle-form.subtitle' | translate }}</h2>
+
+
+
+<form [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>{{ 'vehicle-form.vehicle-type' | translate }}</mat-label>
+    <mat-select formControlName="vehicleType">
+      @for (vehicleType of vehicleTypes; track vehicleType) {
+        <mat-option [value]="vehicleType">{{ vehicleType | translate }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+
+</form>

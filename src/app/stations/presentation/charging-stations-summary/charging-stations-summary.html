@@ -1,0 +1,17 @@
+<mat-card appearance="outlined" [attr.aria-label]="chargingStations().stationName">
+  <mat-card-header>
+    <mat-card-title>{{ chargingStations().stationName }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-card-title> {{ chargingStations().maxGridKwCapacity}} KW </mat-card-title>
+    @if (chargingStations().isActive == true) {
+      <mat-card-title> {{ 'home.active' | translate }} </mat-card-title>
+    } @else {
+      <mat-card-title> {{ 'home.inactive' | translate }} </mat-card-title>
+    }
+  </mat-card-content>
+
+  <mat-card-footer>
+
+  </mat-card-footer>

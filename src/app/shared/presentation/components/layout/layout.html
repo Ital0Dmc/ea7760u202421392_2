@@ -1,0 +1,19 @@
+<mat-toolbar>
+<span class="brand">
+    <h1>{{ 'toolbar.title' | translate }}</h1>
+</span>
+    <nav aria-label="Main navigation">
+
+        <a mat-button routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+            {{ 'toolbar.home' | translate }}
+        </a>
+        <a mat-button routerLink="/charges/new" routerLinkActive="active" ariaCurrentWhenActive="page">
+            {{ 'toolbar.new-energy-report' | translate }}
+        </a>
+    </nav>
+
+    <app-language-switcher class="language"></app-language-switcher>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
